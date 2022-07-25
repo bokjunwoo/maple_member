@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+/* FONT(font-family: 'Orbitron', sans-serif;) */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/* RESET CSS*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+/* COMMON */
+body {
+    background-color: rgba(88, 47, 152, 0.3);
+}
+
+/* WRAP */
+.wrap {
+    width: 340px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.wrap .menu::after {
+    content: "";
+    display: block;
+    clear: both;
+    /* 글자를 아래로 내린다 float 속성에서 사용된다 */
+}
+
+.wrap .menu a i {
+    font-size: 20px;
+}
+.wrap .menu a img {
+    width: 20px;
+    height: 20px;
+}
+
+.wrap .menu a:first-child {
+    float: left;
+    color: #666;
+}
+
+.wrap .menu a:last-child {
+    float: right;
+}
+
+/* PROFILE */
+.wrap .profile {
+    width: 100%;
+    text-align: center;
+}
+
+.wrap .profile > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 5px 15px 30px rgba(88, 47, 152, 0.3);
+}
+
+.wrap .profile h1 {
+    font: bold 22px/1 "Orbitron";
+    /* 22px/1 22px에 line-height 동일한 값을 넣어준다는 뜻 */
+    color: #555;
+    margin: 20px 0px 10px 0px;
+}
+
+.wrap .profile p {
+    font: bold 14px/1 "Orbitron";
+    color: #888;
+}
+
+.wrap .profile .btn_view {
+    display: block;
+    width: 180px;
+    height: 32px;
+    margin: 20px auto 20px;
+    /* block요소에 width값과 height의 값이 있어 margin: auto;로 중알정렬이 가능 */
+    background-color: rgba(88, 47, 152, 0.3);
+    font: bold 15px/32px "Orbitron";
+    color: #555;
+    border-radius: 16px;
+    box-shadow: 5px 10px 20px rgba(88, 47, 152, 0.3);
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2);
+    letter-spacing: 1px;
+    /* 글자 간격을 늘려준다 */
+}
+
+/* CONTACT */
+.wrap .contact {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.wrap .contact li {
+    width: 100%;
+    padding: 10px 0px;
+    border-bottom: 1px solid #eee;
+}
+
+.wrap .contact li:last-child {
+    border-bottom: none;
+}
+
+.wrap .contact li i {
+    width: 20%;
+    text-align: center;
+    color: #555;
+    font-size: 15px;
+    text-shadow: 2px 2px 2px #ddd;
+}
+
+.wrap .contact li span {
+    font: 13px/1 "Orbitron";
+    letter-spacing: 1px;
+}
+
+/* OTHERS */
+.wrap .others {
+    text-align: center;
+    font-size: 0px;
+}
+
+.wrap .others a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: aqua;
+    border-radius: 50%;
+    margin: 0px 10px;
+    opacity: 0.5;
+}
+
+.wrap .others a.on {
+    opacity: 1;
+}
+
+.wrap .others a:nth-of-type(1) {
+    background-color: rgba(88, 47, 152, 0.3);
+    box-shadow: 5px 5px 10px rgba(88, 47, 152, 0.3);
+}
+
+.wrap .others a:nth-of-type(2) {
+    background-color: rgba(229, 223, 109, 0.3);
+    box-shadow: 5px 5px 10px rgba(229, 223, 109, 0.3);
+}
+
+.wrap .others a:nth-of-type(3) {
+    background-color: rgba(99, 252, 181, 0.5);
+    box-shadow: 5px 5px 10px rgba(99, 252, 181, 0.5);
+}
+
+/* MEMBER_2 */
+.member_2 {
+    background-color: rgba(229, 223, 109, 0.3);
+}
+
+.member_2 .wrap .profile > img {
+    box-shadow: 5px 15px 30px rgba(229, 223, 109, 0.3);
+}
+
+.member_2 .wrap .profile .btn_view {
+    background-color: rgba(229, 223, 109, 0.3);
+}
+
+/* MEMBER_3 */
+.member_3 {
+    background-color: rgba(99, 252, 181, 0.5);
+}
+
+.member_3 .wrap .profile > img {
+    box-shadow: 5px 15px 30px rgba(99, 252, 181, 0.5);
+}
+
+.member_3 .wrap .profile .btn_view {
+    background-color: rgba(99, 252, 181, 0.5);
+}
